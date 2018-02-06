@@ -1,12 +1,10 @@
 var mongoose = require('mongoose');
 
 var stockModel = new mongoose.Schema({
-   title: {
-      type: String
-   },
-    author: {type: String},
-    genre: {type: String},
-    read: {type: Boolean, default:false}
+   companyName: {type: String},
+    url: {type: String},
+    price_current: {type: String},
+    price_yesterday: {type: String}
 });
 
 module.exports = mongoose.model('Stock', stockModel);
