@@ -1,8 +1,9 @@
 var mongoose = require('mongoose');
 
 var stockModel = new mongoose.Schema({
-   companyName: {type: String},
-    url: {type: String},
+    ID: {type: String},
+    companyName: {type: String},
+    companyURL: {type: String},
     price_current: {type: String},
     price_yesterday: {type: String}
 });
